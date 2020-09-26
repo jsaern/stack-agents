@@ -114,7 +114,11 @@ return true;
 
 public function commonwordsUncommon() {
 //var_dump($this->resource_path);
-$data = file_get_contents($this->resource_path . 'corncob/corncob_lowercase.txt');
+//$data = file_get_contents($this->resource_path . 'corncob/corncob_lowercase.txt');
+//$data = file_get_contents($this->resource_path . 'corncob/corncob_lowercase.txt');
+$dict_path = '/home/jsae/Outputs/independence/word-sources/dict/';
+$data = file_get_contents($dict_path . 'freq10000-en-list.txt');
+
 //var_dump($data);
 
 $words = [];
