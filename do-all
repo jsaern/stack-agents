@@ -28,7 +28,7 @@ do
     echo "Saving results to $Output_Dir/"$f".out"
     php /var/www/stackr.test/agent uncommon > $Output_Dir/"$f".out
     # remove error messages
-    sed -i -e "/Warning seen/d" -e "/Notice/d" -e "/APACHE/d" $Output_Dir/"$f".out
+    sed -i -e "/Warning seen/d" -e "/Notice/d" -e "/APACHE/d" -e"s/Found uncommon words://" -e "s/ /\n/g" $Output_Dir/"$f".out
 done
 cd $Output_Dir
 echo $PWD
