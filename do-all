@@ -1,0 +1,35 @@
+#!/bin/bash
+
+Article_Dir=/home/jsae/Outputs/independence/word-sources/articles
+Output_Dir=/home/jsae/Outputs/independence/word-sources/uncommon
+Script_Dir=/home/jsae/Outputs/git/stack-agents-prv
+Script_Name=Uncommon.php
+
+FilesSet=*.txt
+
+cd $Article_Dir
+for f in $FilesSet
+do
+    echo "Processing file $f:"
+    #echo $Article_Dir
+    #echo $Output_Dir
+    #echo $Script_Dir
+    #echo $Script_Name
+    # insert new article file name into PHP script
+    old="$Article_Dir"
+    new="$Article_Dir/$f"
+    phpScript="$Script_Dir/$Script_Name"
+    escOld=$(sed 's/[^^\\]/[&]/g; s/\^/\\^/g; s/\\/\\\\/g' <<< "$old")
+    escNew=$(sed 's/[&/\]/\\&/g' <<< "$new")
+    sed -i "/$escOld/c\\\$file = \"$escNew\";" "$phpScript"
+    cp -v $phpScript /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/.
+
+    # run agent PHP
+    echo "Saving results to $Output_Dir/"$f".out"
+    php /var/www/stackr.test/agent uncommon > $Output_Dir/"$f".out
+    # remove error messages
+    sed -i -e "/Warning seen/d" -e "/Notice/d" -e "/APACHE/d" $Output_Dir/"$f".out
+done
+cd $Output_Dir
+echo $PWD
+rename "s/ //g" *.out
