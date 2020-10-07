@@ -17,6 +17,8 @@ class Uncommon extends Agent
     function init()
     {
         $this->minimum_word_length = 4;
+        $this->default_file =
+            "/home/jsae/2018/outputs/organizations/2020-orgfinder/cache/good/file-wsp-home.md";
     }
 
     // functions ----- ----- ----- -----
@@ -30,12 +32,18 @@ class Uncommon extends Agent
     {
         $this->commonwordsUncommon();
         // Bring file in to assess and create set of words to check
-   $file = "/home/jsae/2018/outputs/organizations/2020-orgfinder/cache/good/file-wsp-home.md";
-if ($file == null) {
-	if (isset($this->file)) {
-		$file= $this->file;
-	}
-}
+        $file = $this->default_file;
+        if ($file == null) {
+            if (isset($this->file)) {
+                $file = $this->file;
+            }
+        }
+
+        if (!file_exists($file)) {
+            $this->response .= 'Did not find "' . $file . '". ';
+            return true;
+        }
+
         $data = file_get_contents($file, true);
         //var_dump("merp");
         //var_dump($data);
@@ -78,7 +86,9 @@ if ($file == null) {
 
             if ($respond === true) {
                 $tags = $this->brilltagger_agent->tag($word_name);
-if (!isset($tags[0])) {continue;}
+                if (!isset($tags[0])) {
+                    continue;
+                }
                 $tag = $tags[0]['tag'];
                 if (in_array($tags[0]['tag'], $allowed_tags)) {
                     $this->response .= $word_name . " ";
@@ -133,7 +143,7 @@ if (!isset($tags[0])) {continue;}
         $dict_path = '/home/jsae/Outputs/independence/word-sources/dict/';
         $data = file_get_contents($dict_path . 'freq10000-en-list.txt');
         //$data = file_get_contents($dict_path . 'vocab-84669-en-list.txt');
-        
+
         //var_dump($data);
 
         $words = [];
@@ -199,15 +209,15 @@ if (!isset($tags[0])) {continue;}
 
     public function readSubject()
     {
-	// subject
-	// agent_input
+        // subject
+        // agent_input
         $input = $this->input;
 
-	$filtered_input = $this->assert($input);
+        $filtered_input = $this->assert($input);
 
-	var_dump($filtered_input);
-$this->file = $filtered_input;
-//exit();
+        //var_dump($filtered_input);
+        $this->file = $filtered_input;
+        //exit();
         return false;
     }
 }
