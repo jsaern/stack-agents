@@ -1,11 +1,14 @@
 #!/bin/bash
 
-Article_Dir=/home/jsae/Outputs/independence/word-sources/articles
-Output_Dir=/home/jsae/Outputs/independence/word-sources/uncommon
+#Article_Dir=/home/jsae/Outputs/independence/word-sources/articles
+Article_Dir=/home/jsae/2018/outputs/organizations/2020-orgfinder/cache/good
+#Output_Dir=/home/jsae/Outputs/independence/word-sources/uncommon
+Output_Dir=/home/jsae/2018/outputs/organizations/2020-orgfinder/good/keywords
 Script_Dir=/home/jsae/Outputs/git/stack-agents-prv
 Script_Name=Uncommon.php
 
-FilesSet=*.txt
+#FilesSet=*.txt
+FilesSet=*.md
 
 cd $Article_Dir
 for f in $FilesSet
@@ -22,7 +25,7 @@ do
     escOld=$(sed 's/[^^\\]/[&]/g; s/\^/\\^/g; s/\\/\\\\/g' <<< "$old")
     escNew=$(sed 's/[&/\]/\\&/g' <<< "$new")
     sed -i "/$escOld/c\\\$file = \"$escNew\";" "$phpScript"
-    cp -v $phpScript /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/.
+    cp -vf $phpScript /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/.
 
     # run agent PHP
     echo "Saving results to $Output_Dir/"$f".out"
