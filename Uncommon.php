@@ -178,7 +178,7 @@ class Uncommon extends Agent
         //$data = file_get_contents($this->resource_path . 'corncob/corncob_lowercase.txt');
         $dict_path = '/home/jsae/Outputs/independence/word-sources/dict/';
 
-        $file = $dict_path . 'freq10000-en-list.txt';
+        $file = $dict_path . 'freq10000words-en-list.txt';
 
         if (!file_exists($file)) {
             $this->response .= 'Could not find dictionary, "' . $file . '". ';
