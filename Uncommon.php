@@ -92,6 +92,11 @@ class Uncommon extends Agent
                     continue;
                 }
 
+                if (substr_count($word_name, "_") >= 1) {
+                    continue;
+                }
+
+
                 if (is_numeric($word_name)) {
                     continue;
                 }
@@ -223,7 +228,8 @@ class Uncommon extends Agent
     {
         $this->node_list = ["uncommon" => ["cat", "dog"]];
 
-        $sms = "Looked for uncommon words. ";
+        //$sms = "Looked for uncommon words. ";
+        $sms = "UNCOMMON\n";
 
         $sms .= $this->response;
 
