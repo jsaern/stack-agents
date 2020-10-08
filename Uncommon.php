@@ -153,7 +153,7 @@ class Uncommon extends Agent
             $this->uncommon_message = $this->agent_input;
         }
 
-        $this->resposne .= "Looked for uncommon words. ";
+        $this->response .= "Looked for uncommon words. ";
     }
 
     public function isUncommon($text = null)
