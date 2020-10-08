@@ -1,7 +1,8 @@
 SHELL=/bin/bash
 ACTIVE=Uncommon.php
 SERVERNAME=stackr.test
-WORK_DIR=~/Outputs/git/stack-agents-prv
+#WORK_DIR=~/Outputs/git/stack-agents-prv
+WORK_DIR=$(CURDIR)
 STACK_DIR=/var/www/$(SERVERNAME)/vendor/nrwtaylor/stack-agent-thing/agents
 
 .PHONY: help
