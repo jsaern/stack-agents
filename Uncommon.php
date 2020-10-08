@@ -32,8 +32,8 @@ class Uncommon extends Agent
     {
         $this->commonwordsUncommon();
         // Bring file in to assess and create set of words to check
-        $file = $this->default_file;
         if ($file == null) {
+            $file = $this->default_file;
             if (isset($this->file)) {
                 $file = $this->file;
             }
@@ -45,19 +45,52 @@ class Uncommon extends Agent
         }
 
         $data = file_get_contents($file, true);
-        //var_dump("merp");
-        //var_dump($data);
+
+        $data = strip_tags($data);
+
         $words = [];
         $arr = explode("\n", $data);
         foreach ($arr as $key => $line) {
-            //var_dump($line);
             $tokens = explode(" ", $line);
             foreach ($tokens as $j => $token) {
                 // Strip out numbers and spaces
                 $word_name = trim(strtolower($token));
                 $word_name = trim($word_name, ";");
+                $word_name = trim($word_name, ':');
+                $word_name = trim($word_name, ",");
+                $word_name = trim($word_name, ".");
                 $word_name = trim($word_name, " ");
+                $word_name = trim($word_name, "'");
+                $word_name = trim($word_name, '"');
+                $word_name = trim($word_name, '?');
+
                 $word_name = trim(preg_replace('/\t+/', '', $word_name));
+
+                // Reject strange tokens
+                if (substr_count($word_name, ".") >= 1) {
+                    continue;
+                }
+                if (substr_count($word_name, '/') >= 2) {
+                    continue;
+                }
+                if (substr_count($word_name, '{') >= 1) {
+                    continue;
+                }
+                if (substr_count($word_name, '}') >= 1) {
+                    continue;
+                }
+                if (substr_count($word_name, '(') >= 1) {
+                    continue;
+                }
+                if (substr_count($word_name, ')') >= 1) {
+                    continue;
+                }
+                if (substr_count($word_name, "='") >= 1) {
+                    continue;
+                }
+                if (substr_count($word_name, ";") >= 1) {
+                    continue;
+                }
 
                 if (is_numeric($word_name)) {
                     continue;
@@ -80,8 +113,6 @@ class Uncommon extends Agent
         $allowed_tags = ['NN', 'VBN', 'JJ'];
         //echo "\n";
         foreach ($words as $word_name => $word) {
-            //var_dump("---");
-            //var_dump($word_name);
             $respond = $this->isUncommon($word_name);
 
             if ($respond === true) {
@@ -92,7 +123,6 @@ class Uncommon extends Agent
                 $tag = $tags[0]['tag'];
                 if (in_array($tags[0]['tag'], $allowed_tags)) {
                     $this->response .= $word_name . " ";
-                    //var_dump($tags[0]['tag']);
                 }
             }
         }
@@ -117,6 +147,8 @@ class Uncommon extends Agent
         } else {
             $this->uncommon_message = $this->agent_input;
         }
+
+        $this->resposne .= "Looked for uncommon words. ";
     }
 
     public function isUncommon($text = null)
@@ -137,19 +169,23 @@ class Uncommon extends Agent
     public function commonwordsUncommon()
     {
         //alternative dictionary lists for common words
-        //var_dump($this->resource_path);
         //$data = file_get_contents($this->resource_path . 'corncob/corncob_lowercase.txt');
         //$data = file_get_contents($this->resource_path . 'corncob/corncob_lowercase.txt');
         $dict_path = '/home/jsae/Outputs/independence/word-sources/dict/';
-        $data = file_get_contents($dict_path . 'freq10000-en-list.txt');
-        //$data = file_get_contents($dict_path . 'vocab-84669-en-list.txt');
 
-        //var_dump($data);
+        $file = $dict_path . 'freq10000-en-list.txt';
+
+        if (!file_exists($file)) {
+            $this->response .= 'Could not find dictionary, "' . $file . '". ';
+            return true;
+        }
+
+        $data = file_get_contents($file);
+        //$data = file_get_contents($dict_path . 'vocab-84669-en-list.txt');
 
         $words = [];
         $arr = explode("\n", $data);
         foreach ($arr as $key => $line) {
-            //var_dump($line);
             $tokens = explode(" ", $line);
             foreach ($tokens as $j => $token) {
                 $token = trim($token);
@@ -164,21 +200,14 @@ class Uncommon extends Agent
         $this->common_words = $words;
     }
 
-    function getNegativetime()
-    {
-        $agent = new Negativetime($this->thing, "Uncommon");
-        $this->negative_time = $agent->negative_time; //negative time is asking
-    }
-
-    // -----------------------
-
     public function respondResponse()
     {
         $this->thing->flagGreen();
 
         $this->thing_report["info"] =
-            "This is a Uncommon keeping an eye on how late this Thing is.";
-        $this->thing_report["help"] = "This is about being inscrutable.";
+            "This is Uncommon. It sees uncommon things.";
+        $this->thing_report["help"] =
+            "This is about seeing what is uncommon. Try UNCOMMON <filename>";
 
         //$this->thing_report['sms'] = $this->sms_message;
         $this->thing_report['message'] = $this->sms_message;
@@ -194,7 +223,9 @@ class Uncommon extends Agent
     {
         $this->node_list = ["uncommon" => ["cat", "dog"]];
 
-        $sms = "Found uncommon words: " . $this->response;
+        $sms = "Looked for uncommon words. ";
+
+        $sms .= $this->response;
 
         $this->sms_message = $sms;
         $this->thing_report['sms'] = $sms;
@@ -209,15 +240,13 @@ class Uncommon extends Agent
 
     public function readSubject()
     {
-        // subject
+        // input gets either.
+        // subject or
         // agent_input
         $input = $this->input;
 
         $filtered_input = $this->assert($input);
 
-        //var_dump($filtered_input);
         $this->file = $filtered_input;
-        //exit();
-        return false;
     }
 }
