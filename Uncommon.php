@@ -30,7 +30,7 @@ class Uncommon extends Agent
     {
         $this->commonwordsUncommon();
         // Bring file in to assess and create set of words to check
-   $file = "/home/jsae/2018/outputs/organizations/2020-orgfinder/cache/good/file-wsp-home.md";
+$file = "/home/jsae/2018/outputs/organizations/2020-orgfinder/cache/good/file-exp-home.md";
 if ($file == null) {
 	if (isset($this->file)) {
 		$file= $this->file;
