@@ -96,7 +96,6 @@ class Uncommon extends Agent
                     continue;
                 }
 
-
                 if (is_numeric($word_name)) {
                     continue;
                 }
@@ -246,12 +245,31 @@ class Uncommon extends Agent
 
     public function readSubject()
     {
-        // input gets either.
-        // subject or
-        // agent_input
-        $input = $this->input;
+        // Do not use $input = $this->input
+        // Because that will lose the capitalisation.
 
-        $filtered_input = $this->assert($input);
+        // Use this instead to resolve between the subject and the agent_input.
+        $input = $this->subject;
+        if (isset($this->agent_input)) {
+            $input = $this->agent_input;
+        }
+
+        // https://stackoverflow.com/questions/9598665/php-replace-first-occurrence-of-string-from-0th-position/9598905
+        $string = $input;
+        $str_pattern = 'uncommon';
+        $str_replacement = '';
+
+        if (strpos($string, $str_pattern) !== false) {
+            $occurrence = strpos($string, $str_pattern);
+            $filtered_input = substr_replace(
+                $string,
+                $str_replacement,
+                strpos($string, $str_pattern),
+                strlen($str_pattern)
+            );
+        }
+
+        $filtered_input = trim($filtered_input);
 
         $this->file = $filtered_input;
     }
