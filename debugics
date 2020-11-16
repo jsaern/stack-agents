@@ -1,0 +1,9 @@
+#!/bin/bash
+
+filename=/var/www/stackr.test/resources/when/when.txt
+action=/var/www/stackr.test/agent
+
+while read icsname; do
+  printf "\n----- ----- $icsname ----- -----\n"
+  $action --channel=txt calendar $icsname
+done < $filename

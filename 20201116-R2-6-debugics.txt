@@ -1,0 +1,180 @@
+
+----- ----- #webcal://cantonbecker.com/astronomy-calendar/astrocal.ics ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 1,469ms
+1148 f8ed Added to stack.
+
+----- ----- https://www.officeholidays.com/ics/canada ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 1,769ms
+1148 2698 Added to stack.
+
+----- ----- http://cantonbecker.com/astronomy-calendar/astrocal.ics ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 3,070ms
+1148 b486 Added to stack.
+
+----- ----- https://www.calendarlabs.com/ical-calendar/ics/39/Canada_Holidays.ics ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 1,916ms
+1148 39ee Added to stack.
+
+----- ----- https0X0P+00.0000000.000000calendar.google.com0.000000calendar0.000000ical0.000000ht3jlfaac5lfd6263ulfh4tql8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           0roup.calendar.google.com0.000000public0.000000basic.ics ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 1,348ms
+1148 6eda Added to stack.
+
+----- ----- http://pirate.monkeyness.com/calendars/Moons-Seasons.ics ----- -----
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+Warning seen. 1489 /var/www/stackr.test/vendor/johngrogg/ics-parser/src/ICal/ICal.php 8 Undefined index: UID. 
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 3,358ms
+1148 fe1d Added to stack.
+
+----- ----- oldvectorradio ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 2,960ms
+1148 99f9 Added to stack.
+
+----- ----- Nick, nrwtaylor ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 2 calendar(s). 
+PHP 1,796ms
+1148 7f5e Added to stack.
+
+----- ----- #https://calendar.google.com/calendar/embed?src=en-gb.canadian                      0liday                                       0roup.v.calendar.google.com&ctz=America0.000000Los_Angeles ----- -----
+Warning seen. 539 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 Invalid argument supplied for foreach(). 
+Warning seen. 547 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 8 Undefined variable: ics_links. 
+Warning seen. 640 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 array_merge(): Argument #2 is not an array. 
+Warning seen. 643 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 array_unique() expects parameter 1 to be array, null given. 
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 0 calendar(s). 
+PHP 1,397ms
+1148 8143 Added to stack.
+
+----- ----- #https://calendar.google.com/calendar/embed?src=ht3jlfaac5lfd6263ulfh4tql8                                       0roup.calendar.google.com&ctz=America0.000000Vancouver ----- -----
+Warning seen. 539 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 Invalid argument supplied for foreach(). 
+Warning seen. 547 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 8 Undefined variable: ics_links. 
+Warning seen. 640 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 array_merge(): Argument #2 is not an array. 
+Warning seen. 643 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 array_unique() expects parameter 1 to be array, null given. 
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 0 calendar(s). 
+PHP 1,451ms
+1148 f260 Added to stack.
+
+----- ----- #https://calendar.google.com/calendar/embed?src=i_207.245.28.234                       unrise                                       0roup.v.calendar.google.com&ctz=America0.000000Vancouver ----- -----
+Warning seen. 539 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 Invalid argument supplied for foreach(). 
+Warning seen. 547 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 8 Undefined variable: ics_links. 
+Warning seen. 640 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 array_merge(): Argument #2 is not an array. 
+Warning seen. 643 /var/www/stackr.test/vendor/nrwtaylor/stack-agent-thing/agents/Calendar.php 2 array_unique() expects parameter 1 to be array, null given. 
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 0 calendar(s). 
+PHP 1,354ms
+1148 5327 Added to stack.
+
+----- ----- Jesse, jsaern ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 2 calendar(s). 
+PHP 1,753ms
+1148 84b3 Added to stack.
+
+----- ----- /home/jsae/.claws-mail/claws-mail.ics ----- -----
+CALENDAR America/Vancouver
+
+No calendar information available.
+
+Read 1 calendar(s). 
+PHP 1,472ms
+1148 993d Added to stack.

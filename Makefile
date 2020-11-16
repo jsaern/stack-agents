@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-ACTIVE=Uncommon.php
+ACTIVE=When.php
 SERVERNAME=stackr.test
 #WORK_DIR=~/Outputs/git/stack-agents-prv
 WORK_DIR=$(CURDIR)
