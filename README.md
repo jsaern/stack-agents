@@ -1,6 +1,6 @@
 # Personal Agents for Stackr
 
-A few agents to do personal tasks I to extend the ability of the public stack (install the public stack-agent-thing from Github).  
+A few agents to do personal tasks I to extend the ability of the public stack (install the public stack-agent-thing from [Github](https://github.com/nrwtaylor/stack-agent-thing)).  
 
 Uncommon
 : use word lists to identify uncommon words in articles
