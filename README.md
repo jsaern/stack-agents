@@ -1,5 +1,14 @@
 # Personal Agents for Stackr
 
+A few agents to do personal tasks I to extend the ability of the public stack (install the public stack-agent-thing from Github).  
+
+Uncommon
+: use word lists to identify uncommon words in articles
+
+When
+: connect Google Calendar and ICS files into Benjamin Crowell's `when`, a simple personal calendar
+
+
 First agent uses word lists to identify uncommon words in articles.  
 
 Sources of common words:  
