@@ -39,7 +39,7 @@ todo
 
 ## Credits
 
-Jesse Neri
+Jesse Neri  
 Nick Taylor
 
 ## License
