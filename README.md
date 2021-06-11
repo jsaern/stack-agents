@@ -6,7 +6,7 @@ Uncommon
 : use word lists to identify uncommon words in articles
 
 When
-: connect Google Calendar and ICS files into Benjamin Crowell's `when`, a simple personal calendar
+: connect Google Calendar and ICS files into [Benjamin Crowell's `when`, a simple personal calendar](http://lightandmatter.com/when/when.html)
 
 
 First agent uses word lists to identify uncommon words in articles.  
